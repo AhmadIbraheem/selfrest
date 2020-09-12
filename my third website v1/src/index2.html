@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html ng-app='RoutingApp'>
+<head>
+  <title>Bootstrap Landing Page Website Tutorial</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--- <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">-->
+  <link rel="stylesheet" href="css/style.css"  />
+  
+</head>
+
+<body>
+
+<nav class="navbar  navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <div class="navbar-inverse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="line" class="icon-bar"></span>
+        <span id="line" class="icon-bar"></span>
+        <span id="line" class="icon-bar"></span>    
+      </button>
+</div>
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-main" >
+      <ul  class="nav navbar-nav navbar-right">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref=inDoor >In door</a></li>
+        <li><a ui-sref=outDoor>Out door</a></li>
+        
+        <li><a ui-sref="contact">Contact</a></li>
+        <li><a ui-sref="log-in">Log-In</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div id="home">
+
+    <div class="landing-text">
+      <ui-view></ui-view>
+    </div>
+
+</div>
+
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="img/us1.jpg" id="about-img">
+    </div>
+    <div class="col-sm-6 text-center">
+      <h2>About our Resturant</h2>
+      <p class="lead">
+        Self service system resturant is the first resturant in syria who support self services for custemers , that means you don not need waiter from checking in to purchase the money .
+      </p>
+      <p class="lead">
+     SELF SERVICE RESTURANT <br>
+      where you can find :
+      <li>Delicious food.</li>
+      <li>Relax place.</li>
+      <li>Best Service.</li>  
+    </p>
+    </div>
+  </div>  
+</div> 
+</div>
+ 
+
+
+
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4>OutDoor Service</h4>
+      <p>Never mind about your location ;)<br> 
+        Never mind about the time ;) 
+        <br>SELF SERVICE RESTURANT <br>
+        always in service !!</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="img/delivery-black.png" id="delivery-img">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4 id="in">InDoor Service</h4>
+      <p>all you need to do is click <a href="">In Door</a> button, scan the Qr-code and the menu will apear.
+      <br> Enjoy the trip :) 
+      <br>Welcome with us :) 
+      </p></p>
+    
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="img/indoor-black.png" id="indoor-img" >
+    </div>
+  </div>
+</div>  
+</div>
+
+<div id="fixed">
+  
+</div>
+
+
+
+
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>Contact Us</h4>
+      <h5>+963-938876680</h5>
+      <h5>+963-993710000</h5>
+      <h5></h5>
+    </div>
+    <div class="col-sm-6">
+      <h4>Connect</h4>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-insatgram"></a>
+    </div>
+   
+  </div>
+</footer>
+
+<!--- iOS Landing Page Fix
+<section>
+	<div class="landing-text">
+		<h1>BOOTSTRAP</h1>
+		<h3>Learn the basic building blocks.</h3>
+		<a href="#" class="btn btn-default btn-lg">Get Started</a>
+	</div>
+	<div class="home-wrap">
+        <div id="home">
+		</div>
+    </div>
+</section>
+-->
+
+<!--- iOS Fixed Image Fix
+<figure>
+	<div class="fixed-wrap">
+        <div id="fixed">
+		</div>
+    </div>
+</figure>
+-->
+
+
+
+ <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/app.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- View in Browser: Drew's #1 Trending YouTube Tutorial -->
+<!-- <div class="youtube-tutorial">
+  <a href="http://w3n.link/bundle-bonus-playlist" target="_blank" style="cursor: pointer!important;">
+    <img src="https://w3newbie.com/wp-content/uploads/12-site-bundle-banner.png" style="max-width: 100%; position: absolute; bottom: 0; left: 0;">
+  </a>
+</div> -->
+<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->

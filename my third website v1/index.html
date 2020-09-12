@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html ng-app='RoutingApp'>
+<head>
+  <title>Bootstrap Landing Page Website Tutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css"  />
+  <link rel="stylesheet" href="css/vision.component.css"  />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--- <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">-->
+ 
+  
+</head>
+
+<body>
+
+<nav class="navbar  navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <div class="navbar-inverse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="sr-only">Toggle navigation</span>
+        <span id="line" class="icon-bar"></span>
+        <span id="line" class="icon-bar"></span>
+        <span id="line" class="icon-bar"></span>    
+      </button>
+</div>
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-main" >
+      <ul  class="nav navbar-nav navbar-right">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref=inDoor >In door</a></li>
+        <li><a ui-sref=outDoor>Out door</a></li>
+        
+        <li><a ui-sref="contact">Contact</a></li>
+        <li><a ui-sref="log-in">Log-In</a></li>
+      <li><a ui-sref="menu">Menu</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div id="home">
+
+    <div class="landing-text">
+      <ui-view></ui-view>
+    </div>
+
+</div>
+
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="img/us1.jpg" id="about-img">
+    </div>
+    <div class="col-sm-6 text-center">
+      <h2>About our Resturant</h2>
+      <p class="lead">
+        Self service system resturant is the first resturant in syria who support self services for custemers , that means you don not need waiter from checking in to purchase the money .
+      </p>
+      <p class="lead">
+     SELF SERVICE RESTURANT <br>
+      where you can find :
+      <li>Delicious food.</li>
+      <li>Relax place.</li>
+      <li>Best Service.</li>  
+    </p>
+    </div>
+  </div>  
+</div> 
+</div>
+ 
+
+
+
+<div class="padding">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4>OutDoor Service</h4>
+      <p>Never mind about your location ;)<br> 
+        Never mind about the time ;) 
+        <br>SELF SERVICE RESTURANT <br>
+        always in service !!</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="img/delivery-black.png" id="delivery-img">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4 id="in">InDoor Service</h4>
+      <p>all you need to do is click <a href="">In Door</a> button, scan the Qr-code and the menu will apear.
+      <br> Enjoy the trip :) 
+      <br>Welcome with us :) 
+      </p></p>
+    
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="img/indoor-black.png" id="indoor-img" >
+    </div>
+  </div>
+</div>  
+</div>
+
+<div id="fixed">
+  
+</div>
+
+
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="logo">
+                        <a class="logo-ft scroll-top" href="#"><em>s</em>elf</a>
+                        <a class="logo-ft scroll-top" href="#"><em>R</em>esturant</a>
+                        <p>Copyright &copy; 2020 Freesia Company 
+                       <!-- <br>Design: templatemo</p> -->
+                    <br>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="location">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>Syria , Homs  <br></li>
+                            <li>Al-Waeer specific location<br></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="contact-info">
+                        <h4>More Info</h4>
+                        <ul>
+                          <li><a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:rgb(0,0,0,0.1);border-color: #ff5e00"><span class="glyphicon glyphicon-earphone">+963 948876680</span></a>
+                            </li><li><a class="btn btn-primary btn-xlg" href="tel:713-992-0916" style="background-color:rgb(0,0,0,0.1);border-color: #ff5e00"><span class="glyphicon glyphicon-earphone">+963 948876680</span>
+                           </a> </li>
+                           <a class="btn btn-primary" href="https://bootstrapemail.com"  style="background-color:rgb(0,0,0,0.1);border-color: #ff5e00">Email Us</a>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="connect-us">
+                        <h4>Get Social with us</h4>
+                        <ul>
+                            <li ><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                           <!--  <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!--- iOS Landing Page Fix
+<section>
+	<div class="landing-text">
+		<h1>BOOTSTRAP</h1>
+		<h3>Learn the basic building blocks.</h3>
+		<a href="#" class="btn btn-default btn-lg">Get Started</a>
+	</div>
+	<div class="home-wrap">
+        <div id="home">
+		</div>
+    </div>
+</section>
+-->
+
+<!--- iOS Fixed Image Fix
+<figure>
+	<div class="fixed-wrap">
+        <div id="fixed">
+		</div>
+    </div>
+</figure>
+-->
+
+
+
+ <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/app.js"></script>
+    <script src="js/script.js"></script>
+     <script type="text/javascript">
+   
+  $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 100) {
+            $(".navbar").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".navbar").removeClass("active");
+        }
+    });
+});
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- View in Browser: Drew's #1 Trending YouTube Tutorial -->
+<!-- <div class="youtube-tutorial">
+  <a href="http://w3n.link/bundle-bonus-playlist" target="_blank" style="cursor: pointer!important;">
+    <img src="https://w3newbie.com/wp-content/uploads/12-site-bundle-banner.png" style="max-width: 100%; position: absolute; bottom: 0; left: 0;">
+  </a>
+</div> -->
+<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->
